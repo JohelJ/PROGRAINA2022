@@ -1,0 +1,47 @@
+
+body{
+    background-color: lightcyan;
+    
+}
+
+img{
+    width: 150px; 
+    height: 200px;
+}
+
+header{
+    
+    display: flex;
+    
+}
+
+#informacionPersonal{
+    margin-left: 20px;
+    color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#formacionAcademica{
+    color: darkkhaki;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Capacitaciones{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#referencia{
+    font-size: x-large;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: teal;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightskyblue;
+}

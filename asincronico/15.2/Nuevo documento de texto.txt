@@ -1,0 +1,7 @@
+<!doctype html>
+<html>
+<head>
+<title> Curriculum </title>
+</head>
+
+</html>
