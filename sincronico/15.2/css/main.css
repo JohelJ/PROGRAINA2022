@@ -1,0 +1,29 @@
+h2{
+background-color: bisque;
+color: cadetblue;
+font-weight: 400;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+/* selectores: universal (*), etiqueta, clase y id*/
+
+
+*{
+    color: black;
+}
+
+/*clase*/
+
+.tabla1{
+background-color: blueviolet;
+
+}
+
+/*id*/
+
+#apellido{
+background-color: darkgreen;
+
+}

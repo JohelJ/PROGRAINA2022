@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y CSS</title>
+    <link rel="stylesheet" href="css/main.css">
+<!-- </head>
+
+<style>
+h2{
+background-color: cornflowerblue;
+font-weight: 400;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+</style> -->
+
+<body>
+    <h2>Tablas regulares e irregulares</h2>
+    <table border="1" class = "tabla1">
+        <caption>Tabla Regular</caption>
+        <tr>
+            <th>nombre</th>
+            <th id="apellido">apellido 1 </th>
+            <th id="apellido">apellido 2 </th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>perez </td>
+            <td id="apellido">rodriguez</td>
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>foler</td>
+            <td>xd</td>
+        </tr>
+    </table>
+
+    <table  border="2" style="margin-top: 20px; " >
+        <tr>
+            <th style="background-color: red;">nombre</th>
+            <th>apellido 1 </th>
+            <th>apellido 2 </th>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">juan perez</td>
+            
+            <td>rodriguez</td>
+        </tr>
+        <tr>
+            <td>hola</td>
+            
+        </tr>
+    </table>
+
+    <table border="2" style="margin-top: 20px; ">
+        <tr>
+            <td colspan="1" rowspan="2"></td>
+            <td colspan="2">1 eval</td>
+            <td colspan="2">2 eval</td>
+            <td colspan="2">3 eval</td>
+           
+        </tr>
+        <tr>
+            <td style="background-color: green;">aprobados</td>
+            <td style="background-color: red;">suspendidos</td>
+            <td style="background-color: green;">aprobados</td>
+            <td style="background-color: red;">suspendidos</td>
+            <td style="background-color: green;">aprobados</td>
+            <td style="background-color: red;">suspendidos</td>
+            
+        </tr>
+        <tr>
+            <td>informatica</td>
+            <td>20</td>
+            <td>2</td>
+            <td>19</td>
+            <td>3</td>
+            <td>22</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>matematicas</td>
+            <td>10</td>
+            <td>12</td>
+            <td>15</td>
+            <td>7</td>
+            <td>12</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <table border="2" style="margin-top: 20px; ">
+        <tr>
+            <td>horas</td>
+            <td>lunes</td>
+            <td>martes</td>
+            <td>miercoles</td>
+            <td>jueves</td>
+            <td>viernes</td>
+            
+        </tr>
+        <tr>
+            <td>8:00 - 9:00</td>
+            <td rowspan="2" style="background-color: red;">matematicas</td>
+            <td style="background-color: red;">lengua</td>
+            <td>musica</td>
+            <td ></td>
+            <td rowspan="2" style="background-color: red;">matematicas</td>
+            
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>Ingles</td>
+            <td>Inges</td>
+            <td style="background-color: pink;">E.Fisica</td>
+            
+        </tr>
+        <tr>
+            <td>10:00 - 10:30</td>
+            <td colspan="5" style="background-color: green;">recreo</td>
+            
+        </tr>
+        <tr>
+            <td>10:30 - 11:30</td>
+            <td style="background-color: pink;">E.Fisica</td>
+            <td>Valenciano</td>
+            <td rowspan="2" style="background-color: red;">Lengua</td>
+            <td style="background-color: yellow;">Informatica</td>
+            <td>Ingles</td>
+            
+        </tr>
+        <tr>
+            <td>12:30 - 13:30</td>
+            <td>Musica</td>
+            <td style="background-color: pink;">E.Fisica</td>
+            <td rowspan="2" style="background-color: red;">Matematica</td>
+            <td style="background-color: yellow;">informatica</td>
+
+            
+        </tr>
+
+        <tr>
+            <td>13:30 - 14:30</td>
+            <td></td>
+            <td style="background-color: yellow;">Informatica</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>hola</h2>
+
+        
+
+</body>
+
+</html>
