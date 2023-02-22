@@ -1,0 +1,85 @@
+
+body{
+    background-color: lightcyan;
+    
+}
+
+img{
+    width: 150px; 
+    height: 200px;
+    box-shadow: grey 2px 2px;
+}
+
+header{
+    
+    display: flex;
+    
+}
+
+#informacionPersonal{
+    margin-left: 20px;
+    color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#formacionAcademica{
+    color: darkcyan ;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 50%;
+}
+
+#Capacitaciones{
+    color:darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12% ;
+}
+
+#referencia{
+    background-color: lightblue;
+    font-size: x-large;
+    color: cadetblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    box-shadow: grey 2px 2px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: teal;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightskyblue;
+}
+
+#Idiomas{
+    color: darkcyan;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+
+.progra{
+    background-color: lightblue;
+    padding: 10px;
+    position: absolute;
+    top: 34%;
+    width: 150px;
+    height: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: ;
+    color: cadetblue;
+    border-radius: 100%;
+    line-height: 120px;
+    text-align: center;
+    box-shadow: grey 2px 2px;
+    font-size: 20px;
+    font-weight: bold;
+}

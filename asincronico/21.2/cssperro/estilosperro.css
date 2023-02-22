@@ -1,0 +1,59 @@
+body{
+    background-color: cadetblue;
+}
+
+.detallesTarjeta{
+    background-color: white;
+    width: 40%;
+    height: 500px;
+    margin: 7% auto;
+    padding: 20px;
+    display: block;
+    border-radius: 10px;
+}
+
+h2{
+    background-color: aqua;
+    width: 400px;
+    position: absolute;
+    left: 27%;
+    
+    
+
+}
+
+.details{
+    
+    position: absolute;
+    top: 30%;
+    
+}
+
+div{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.expiracionCv{
+    margin-top: inherit;
+    position: relative;
+    left: 100%;
+    top: -70px;
+}
+
+img{
+    position: relative;
+    left: 60%;
+
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+#continuar{
+    border: 1px solid black;
+    width: 300px;
+}
+
+
