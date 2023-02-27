@@ -1,0 +1,62 @@
+#fondo{
+    background-color: orangered;
+    margin-left: 70px;
+    color: white;
+}
+
+#orders{
+    color: white;
+    padding: 240px;
+    background-size: 100%;
+    align-items: center;
+    
+    
+}
+.container{
+    display: inline;
+}
+#destinosCuerpo{
+    
+    }
+
+#cabezado{
+    position: fixed;
+    width: 110%;
+    height: 70px;
+    background-color: white;    
+}
+
+.card{
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(193, 193, 193);
+}
+
+.btnDescarga{
+    background-color: #2b3445;
+    color: white;
+    text-align: end;
+}
+
+.btnTrabajar{
+    background-color: orangered;
+    color: white;
+    position: absolute;
+    bottom: 30%;
+}
+
+
+
+.restaurantes>a>img{
+ 
+ width: 100%;
+
+
+}
+
+.restaurantes{
+    width: 70%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px grey;
+    margin-left: 20%;
+    
+}

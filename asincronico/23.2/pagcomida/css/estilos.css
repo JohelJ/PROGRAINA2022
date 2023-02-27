@@ -1,0 +1,17 @@
+#fondo{
+    background-color: orangered;
+    margin-left: 70px;
+    color: white;
+}
+
+#orders{
+    color: white;
+    padding: 240px;
+    background-size: 100%;
+    align-items: center;
+    
+    
+}
+.container{
+    display: inline;
+}
