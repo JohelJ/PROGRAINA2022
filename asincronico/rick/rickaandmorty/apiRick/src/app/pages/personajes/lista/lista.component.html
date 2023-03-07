@@ -1,0 +1,17 @@
+
+<button class="btn btn-secondary" (click)="prev()" *ngIf = "info?.prev" >prev</button>
+<button class="btn btn-secondary" (click)="next()" *ngIf = "info?.next" >next</button>
+
+<div class="row" >
+
+   
+<div class="col-xs-12 col-sm-4 col-md-3 mt-5" *ngFor="let per of lista"> <div class="card" style="width: 18rem;">
+    <img src="{{per.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">ID: {{per.id}} Nombre: {{per.name}} </h5>
+    <p class="card-text">Estado: {{per.status}} <br> Especie: {{per.species}} <br> Fecha creado: {{per.created  | date:'short'}}</p>
+      <button [routerLink]= "['/personajes/detalle/',per.id]" class="btn btn-secondary">detalle</button>
+    </div>
+  </div> </div>
+
+</div>

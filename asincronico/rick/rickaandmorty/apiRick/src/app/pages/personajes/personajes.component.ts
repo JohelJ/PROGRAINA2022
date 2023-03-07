@@ -22,7 +22,7 @@ export class PersonajesComponent implements OnInit, AfterViewInit {
 
 
 
-  pj: string[] = ['id','name','status','species','type','gender','image','created'];
+  pj: string[] = ['id','name','status','species','type','gender','image','created', 'actions'];
   dataSource = new MatTableDataSource<personajeModel>([]);
 
 
