@@ -16,8 +16,8 @@ export class LocationComponent implements OnInit, AfterViewInit {
   
   arr:locationModel[]=[];
   lis:InfoModel;
-
-  loca: string[] = ['id','name','type','dimension','created'];
+  lista:locationModel[]=[];
+  loca: string[] = ['id','name','type','dimension','created','actions'];
   dataSource =new MatTableDataSource<locationModel>([]);
 
 
@@ -37,14 +37,14 @@ export class LocationComponent implements OnInit, AfterViewInit {
 
   }
 
-  // next():void{
-  //   this.getPersonajes(this.lis.next)
+   next():void{
+     this.getlocation(this.lis.next)
 
-  // }
+   }
 
-  // prev():void{
-  //   this.getPersonajes(this.lis.prev)
-  // }
+   prev():void{
+     this.getlocation(this.lis.prev)
+   }
 
   ngOnInit():void{
     this.getlocation('https://rickandmortyapi.com/api/location');
@@ -57,7 +57,11 @@ export class LocationComponent implements OnInit, AfterViewInit {
     this.locationSrv.getlocation(url).subscribe((data:any)=>{
       const {results, info}=data;
       this.dataSource=results;
-      console.log(this.lis)
+      this.lista=[];
+      this.lista=[...this.lista,...results]
+
+      this.lis=info;
+      console.log(this.dataSource)
       
       
           });

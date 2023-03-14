@@ -1,48 +1,19 @@
+<button (click)="prev()" >prev</button>
+<button (click)="next()" >next</button>
 
 
-<div class="mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource">
-  
-      <!-- Position Column -->
-      <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> Id </th>
-        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-      </ng-container>
-  
-      <!-- Name Column -->
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> nombre </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-      </ng-container>
-  
-      <!-- Weight Column -->
-      <ng-container matColumnDef="type">
-        <th mat-header-cell *matHeaderCellDef> estado </th>
-        <td mat-cell *matCellDef="let element"> {{element.type}} </td>
-      </ng-container>
-  
-      <!-- Symbol Column -->
-      <ng-container matColumnDef="dimension">
-        <th mat-header-cell *matHeaderCellDef> especie </th>
-        <td mat-cell *matCellDef="let element"> {{element.dimension}} </td>
-      </ng-container>
+<div class="row" >
 
-      <ng-container matColumnDef="created">
-        <th mat-header-cell *matHeaderCellDef> tipo </th>
-        <td mat-cell *matCellDef="let element"> {{element.created}} </td>
-      </ng-container>
-
-      
-
+   
+  <div class="col-xs-12 col-sm-4 col-md-3 mt-5" *ngFor="let per of lista"> <div class="card" style="width: 18rem;">
   
-      <tr mat-header-row *matHeaderRowDef="loca"></tr>
-      <tr mat-row *matRowDef="let row; columns: loca;"></tr>
-    </table>
-<!--   
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
-                   showFirstLastButtons
-                   aria-label="Select page of periodic elements">
-    </mat-paginator> -->
+      <div class="card-body">
+        <h5 class="card-title">ID: {{per.id}} Nombre: {{per.name}} </h5>
+      <p class="card-text">dimension: {{per.dimension}} <br> tipo: {{per.type}} <br> Fecha creado: {{per.created  | date:'short'}}</p>
+        <button [routerLink]= "['/location/detalle/',per.id]" class="btn btn-secondary">detalle</button>
+      </div>
+    </div> </div>
+  
   </div>
   
 

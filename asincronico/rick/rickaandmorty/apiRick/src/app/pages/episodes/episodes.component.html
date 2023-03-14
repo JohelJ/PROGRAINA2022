@@ -1,0 +1,22 @@
+<!-- <button mat-button (click)="preview" (click)="preview()" ngIf="info.prev"> atras</button>
+<button mat-button color="primary" (click)="next()"ngIf="info.next">Sigiente</button> 
+ -->
+
+<div class="row margenes">
+  <div class="col col-xs-12 col=sm-6 col-md-2" *ngFor="let epi of lista" style="color: rgb(0, 0, 0);">
+
+      <div class="card" style="width: 16rem;">
+
+          <div class="card-body">
+              <h1 class="card-title">{{epi.id}}...{{epi.name}}</h1>
+              <p class="card-text">air date: {{ epi.air_date}}</p>
+              <p class="card-text">episodios: {{ epi.episode}}</p>
+              <p class="card-text">Fecha de creacion:</p>
+              <p class="card-text">{{ epi.created | date:'short'}}</p>
+              <button mat-button color="primary" [routerLink]="['/episodes/linkdetalle/',epi.id]"> detalles</button> 
+          </div>
+      </div>
+
+
+  </div>
+</div>w

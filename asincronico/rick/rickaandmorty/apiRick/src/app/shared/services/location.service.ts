@@ -17,5 +17,9 @@ export class locationService {
     return this.http.get(<string> url);  
   }
 
+  getlocationByID(id:any):Observable<locationModel>{
+    return this.http.get<locationModel>('https://rickandmortyapi.com/api/location/' + id);
+  }
+
 
 } 
