@@ -17,7 +17,8 @@ export class DetalleComponent {
 id:number=0;
 personaje:personajeModel;
 episodios: String[]=['id', 'name', 'air_date', 'episode','created'];
-aux: Episodes[];
+aux: string[]=[];
+
 
   constructor(route:ActivatedRoute, srv:PersonajesService, epSrv:EpisodesService){
 
@@ -26,31 +27,29 @@ aux: Episodes[];
     const id= route.snapshot.paramMap.get('id');
 
     srv.getPersonajeByID(id).subscribe((result:any)=>{
+     
+      const{episode}=result;
+
       this.personaje=result;
-      console.log(result)
+      this.personaje.episode=episode;
+      console.log(this.personaje.episode);
     });
 
 
   
   }
 
+  getEpisodios(episode:any){
+    let link =  episode.split("sode/")
+    let linkEpisodio = link[1];
+   
+    return linkEpisodio
+      
+  };
+
   
 
-
-  
-
-  ngOnInit():void{}
-
-  // getEpisodios(url?:String):{
-  //   this.epSrv.getPersonaje(url).subscribe((data:any)=>{
-  //     const {results, info}=data;
-  //     this.dataSource=results;
-  //     this.lis=info
-      
-  //     console.log(this.lis)
-      
-      
-  //         });
+ 
 
   }
 

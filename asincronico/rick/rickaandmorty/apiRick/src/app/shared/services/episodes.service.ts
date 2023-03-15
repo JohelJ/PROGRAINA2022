@@ -20,4 +20,6 @@ export class EpisodesService {
     return this.http.get<Episodes>('https://rickandmortyapi.com/api/episode/'+id)
 
   }
+
+  
 }

@@ -21,6 +21,8 @@ export class PersonajesService {
     return this.http.get<personajeModel>('https://rickandmortyapi.com/api/character/' + id);
   }
 
+  
+
 
 } 
 

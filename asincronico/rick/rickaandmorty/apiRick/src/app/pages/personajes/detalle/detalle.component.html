@@ -10,18 +10,24 @@
           <li class="list-group-item">{{personaje.gender}}</li>
           <li class="list-group-item">{{personaje.species}}</li>
           <li class="list-group-item">{{personaje.status}}</li>
-          <li><table>
-            <td *ngFor="let ep of episodios">
-              <tr>
-                id : {{id}}
-               
-              </tr>
           
-            </td>
-          </table></li>
         </ul>
       </div>
+
+      
 </div>
+
+<table style="background-color: bisque; font-weight: bolder; width: 25%; margin: 0% auto; border-radius: 10px; " >
+  <tr *ngFor="let ep of personaje?.episode" >
+    <td>
+    episodio:  <br> {{ep}}
+
+    <button class="btn btn-secondary" [routerLink]="['/episodes/linkdetalle/',getEpisodios(ep)]">Ir a detalle del episodio</button>
+     
+    </td>
+
+  </tr>
+</table>
 
 </div>
 

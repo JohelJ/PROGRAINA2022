@@ -1,6 +1,8 @@
 import { DatePipe } from "@angular/common";
 
 export interface personajeModel{
+    [x: string]: any;
+    aux: any;
 
     id: number;
     name: String;
@@ -10,7 +12,7 @@ export interface personajeModel{
     gender:String;
     image: String;
     created:Date;
-
+    episode:[];
 }
 
 
