@@ -111,11 +111,11 @@ class ClientesController {
 
     static ActualizarCliente = async (req: Request, res: Response) => {
 
-        const {cedula, nombre, apellido1, apellido2, email, fechaNac, estado }= req.body;
+        const {nombre, apellido1, apellido2, email, fechaNac, estado }= req.body;
 
     
-
-       
+        const cedula= parseInt( req.params['cedula']);
+      
         if(!nombre){
             return res.status(400).json({message:'falta el nombre'});
         }
@@ -143,7 +143,7 @@ class ClientesController {
         
 
         } catch (error) {
-            return res.status(400).json({message:'No se encontro Cliente con el ID enviado'});
+            return res.status(400).json({message:'No se encontro Cliente con la cedula ingresada'});
         }
 
         cliente.nombre = nombre;
@@ -152,9 +152,11 @@ class ClientesController {
         cliente.email= email;
         cliente.fechaNac = fechaNac;
         cliente.estado = estado;
+
         await ClientesRepo.save(cliente)
 
         return res.status(200).json({message:'se ha actualizado el Cliente'});
+
     }
 
 }
